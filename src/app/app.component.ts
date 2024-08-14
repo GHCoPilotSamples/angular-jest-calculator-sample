@@ -10,8 +10,26 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'soca10';
+  title = 'Simple Calculator';
   sum(a: number, b: number) {
     return a + b;
+  }
+  subtract(a: number, b: number) {
+    return a - b;
+  }
+  multiply(a: number, b: number) {
+    return a * b;
+  }
+  divide(a: number, b: number) {
+    return a / b;
+  }
+  fibonacci(n: number): number {
+    if (n <= 1) {
+      return n;
+    }
+    return this.fibonacci(n - 1) + this.fibonacci(n - 2);
+  }
+  square(a: number) {
+    return a * a;
   }
 }
