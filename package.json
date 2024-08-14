@@ -6,9 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test": "ng test",
+    "test:watch": "ng test --watch",
+    "test:coverage": "ng test   --code-coverage",
     "serve:ssr:soca10": "node dist/soca10/server/server.mjs"
   },
   "private": true,
@@ -33,9 +33,15 @@
     "@angular/cli": "^17.0.8",
     "@angular/compiler-cli": "^17.0.0",
     "@types/express": "^4.17.17",
-    "@types/jest": "^29.5.11",
     "@types/node": "^18.18.0",
-    "jest-preset-angular": "^14.0.0",
+    "jasmine-core": "^5.2.0",
+    "jasmine-spec-reporter": "^7.0.0",
+    "karma": "^6.4.4",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-coverage": "^2.2.1",
+    "karma-coverage-istanbul-reporter": "^3.0.3",
+    "karma-jasmine": "^5.1.0",
+    "karma-jasmine-html-reporter": "^2.1.0",
     "typescript": "~5.2.2"
   }
 }
