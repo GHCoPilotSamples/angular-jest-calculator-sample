@@ -11,6 +11,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'Simple Calculator';
+  isInitialized = false;
+
+  ngOnInit() {
+    this.isInitialized = true;
+  }
+
   sum(a: number, b: number) {
     return a + b;
   }
